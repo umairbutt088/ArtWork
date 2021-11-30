@@ -3,6 +3,7 @@ import {Image, Text, View, Animated, StyleSheet, Modal} from 'react-native';
 import {Button} from 'react-native-paper';
 import NfcManager from 'react-native-nfc-manager';
 import {useOutlet} from 'reconnect.js';
+import {colors} from '../Utilities';
 
 function NfcPromptAndroid(props) {
   const [visible, setVisible] = React.useState(false);
@@ -69,7 +70,10 @@ function NfcPromptAndroid(props) {
             <Text>{message}</Text>
           </View>
 
-          <Button mode="contained" onPress={cancelNfcScan}>
+          <Button
+            onPress={cancelNfcScan}
+            labelStyle={{color: colors.white}}
+            style={{backgroundColor: colors.s6}}>
             CANCEL
           </Button>
         </Animated.View>

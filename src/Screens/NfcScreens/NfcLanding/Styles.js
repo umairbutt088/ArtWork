@@ -8,10 +8,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   artworkMainContainer: {
-    flexDirection: 'row',
-    height: HP('45'),
+    height: HP('43'),
     marginTop: WP('5'),
-    paddingHorizontal: 5,
+    backgroundColor: colors.white,
   },
 });
 export default styles;

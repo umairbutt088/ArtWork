@@ -1,6 +1,7 @@
 import React from 'react';
 import {Image, Text, View, Animated, StyleSheet, Modal} from 'react-native';
 import {Button} from 'react-native-paper';
+import {colors, WP} from '../Utilities';
 
 const CmdType = {
   COMMAND: 'command',
@@ -188,11 +189,22 @@ function CustomTransceiveModal(props) {
           )}
 
           <View style={{flexDirection: 'row'}}>
-            <Button mode="contained" onPress={doAddCommand} style={{flex: 1}}>
+            <Button
+              // mode="contained"
+              onPress={doAddCommand}
+              style={{
+                flex: 1,
+                backgroundColor: colors.s6,
+                marginRight: WP('5'),
+              }}
+              labelStyle={{color: colors.white}}>
               {isEditing ? 'Modify' : 'Add'}
             </Button>
 
-            <Button onPress={doCancel} style={{flex: 1}}>
+            <Button
+              onPress={doCancel}
+              labelStyle={{color: colors.white}}
+              style={{flex: 1, backgroundColor: colors.s6}}>
               CANCEL
             </Button>
           </View>

@@ -5,7 +5,6 @@ import {
   Image,
   View,
   Text,
-  // Icon,
   TouchableOpacity,
 } from 'react-native';
 import {Icon} from 'react-native-elements';
@@ -80,7 +79,6 @@ const styles = StyleSheet.create({
     width: WP('70'),
     backgroundColor: colors.s6,
     marginTop: WP('3'),
-    margin: WP('3'),
     borderTopLeftRadius: WP('8'),
     borderTopRightRadius: WP('8'),
     borderBottomLeftRadius: WP('1'),
@@ -89,10 +87,10 @@ const styles = StyleSheet.create({
       ios: {
         shadowColor: colors.black,
         shadowOffset: {width: 0, height: 1},
-        shadowOpacity: 0.3,
+        shadowOpacity: 0.2,
       },
       android: {
-        elevation: 1,
+        elevation: 3,
       },
     }),
   },
@@ -110,7 +108,6 @@ const styles = StyleSheet.create({
   },
   dateContainer: {
     paddingVertical: WP('2'),
-    // width: WP('12'),
     backgroundColor: 'transparent',
     marginLeft: WP('3.5'),
     marginTop: HP('2'),
@@ -127,7 +124,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(0,0,0,0.05)',
     flexDirection: 'row',
     alignItems: 'center',
-    // marginTop: HP('18'),
     paddingHorizontal: WP('2'),
   },
   locationTextStyle: {
